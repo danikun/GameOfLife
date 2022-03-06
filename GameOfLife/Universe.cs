@@ -11,8 +11,6 @@ public class Universe
         _cells = new HashSet<Cell>();
     }
 
-    public void Reset(params Cell[] cells) => Reset(cells.ToHashSet());
-    
     public void Reset(IEnumerable<Cell> cells)
     {
         _cells.Clear();
